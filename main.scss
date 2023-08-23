@@ -1,0 +1,151 @@
+
+
+    // Variáveis
+    $primary-color: #4E7385;
+    $secondary-color: #aecfd2;
+    $card-color: black;
+
+    // Mixins
+    @mixin button-style {
+        background-color: $secondary-color;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    // Estilos globais
+    body {
+        font-family: Roboto, sans-serif;
+    }
+
+    // Estilos para a barra de navegação
+    .navbar {
+        background-color: #ddebec;
+        justify-content: space-between;
+        align-items: center;
+
+
+    height: 170px; /* Defina a altura desejada */
+
+
+
+
+
+
+        .navbar-brand,
+        .nav-cardapio .nav-link.nav-link.active:hover,
+        .nav-cardapio .nav-link:hover {
+            color: $secondary-color;
+        }
+
+        .navbar-toggler {
+            background-color: $secondary-color;
+        }
+
+        .nav .nav-link.active {
+            background-color: #fff;
+            color: $primary-color;
+        }
+
+        .nav .nav-link,
+        .navbar-brand,
+        .navbar-brand:hover {
+            color: $secondary-color;
+        }
+    }
+
+
+    // Estilos para cartões
+    .card {
+        background-color: #c0bcbc;
+        color: #ddebec;
+    }
+
+    // Estilos para títulos de seção
+    .section-title {
+        font-family: 'Marcellus', serif;
+        
+        
+    }
+
+    // Estilos para botões de tratamentos
+    .botao-tratamentos {
+        @include button-style;
+    }
+
+    // Estilos para seção cardápio
+    #cardapio {
+        background-color: $secondary-color;
+    }
+
+    // Estilos para textos coloridos
+    .text-colered {
+        color: $primary-color;
+    }
+
+    // Estilos para links sociais
+    .social-links {
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 20px;
+            text-align: start;
+        }
+    }
+
+    // Estilos para o logotipo
+    .logo-img {
+        max-height: 250px;
+
+        @media (max-width: 767px) {
+            max-height: 110px;
+        }
+    }
+
+    // Estilos para o mapa
+    .map-box {
+        max-width: 100%;
+        height: 500px;
+        background-color: #fff;
+        color: #000;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // Estilos para botões de contato
+    #fale-conosco button {
+        @include button-style;
+        background-color: $primary-color;
+        color: white;
+    }
+
+    // Estilos para links ativos no cardápio
+    .nav-cardapio .nav-link.active {
+        background-color: $primary-color;
+        color: white;
+    }
+
+    .col-md-6.mt-4.mt-md-0 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    
+        .foto-perfil {
+            max-width: 70%; /* Defina o tamanho máximo que deseja para a imagem */
+            margin: 0 auto;
+        }
+    }
+
+    .h2-tratamentos {
+        font-size: 60px;
+        color: $secondary-color;
+    }
