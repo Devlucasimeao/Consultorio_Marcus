@@ -17,6 +17,7 @@
     // Estilos globais
     body {
         font-family: Roboto, sans-serif;
+
     }
 
     // Estilos para a barra de navegação
@@ -26,7 +27,12 @@
         align-items: center;
 
 
-    height: 170px; /* Defina a altura desejada */
+        height: 200px; /* Defina a altura desejada */
+        
+        @media (max-width: 1000px) {
+            position: static; /* Remove o sticky effect */
+            height: auto;
+        }
 
 
 
@@ -100,10 +106,10 @@
 
     // Estilos para o logotipo
     .logo-img {
-        max-height: 250px;
+        max-height: 350px;
 
-        @media (max-width: 767px) {
-            max-height: 110px;
+        @media (max-width: 1000px) {
+            max-height: 250px;
         }
     }
 

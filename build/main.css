@@ -7,7 +7,13 @@ body {
   background-color: #ddebec;
   justify-content: space-between;
   align-items: center;
-  height: 170px; /* Defina a altura desejada */
+  height: 200px; /* Defina a altura desejada */
+}
+@media (max-width: 1000px) {
+  .navbar {
+    position: static; /* Remove o sticky effect */
+    height: auto;
+  }
 }
 .navbar .navbar-brand,
 .navbar .nav-cardapio .nav-link.nav-link.active:hover,
@@ -63,11 +69,11 @@ body {
 }
 
 .logo-img {
-  max-height: 250px;
+  max-height: 350px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   .logo-img {
-    max-height: 110px;
+    max-height: 250px;
   }
 }
 
