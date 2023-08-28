@@ -12,6 +12,14 @@
         padding: 10px 20px;
         border: none;
         cursor: pointer;
+
+        transition: all ease .3s;
+        &:hover {
+            transform: scale(1.2);
+            background-color: black;
+            color: #fff;
+        }        
+        
     }
 
     // Estilos globais
@@ -65,7 +73,7 @@
     // Estilos para cartões
     .card {
         background-color: #c0bcbc;
-        color: #ddebec;
+        color: #071b1b;
     }
 
     // Estilos para títulos de seção
@@ -101,6 +109,11 @@
             display: inline-block;
             padding: 20px;
             text-align: start;
+            
+                transition: all ease .3s;
+                &:hover {
+                    transform: scale(1.2);
+                }
         }
     }
 
@@ -148,6 +161,9 @@
         .foto-perfil {
             max-width: 70%; /* Defina o tamanho máximo que deseja para a imagem */
             margin: 0 auto;
+            
+
+
         }
     }
 

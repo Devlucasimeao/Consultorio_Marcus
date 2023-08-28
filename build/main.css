@@ -35,7 +35,7 @@ body {
 
 .card {
   background-color: #c0bcbc;
-  color: #ddebec;
+  color: #071b1b;
 }
 
 .section-title {
@@ -48,6 +48,12 @@ body {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  transition: all ease 0.3s;
+}
+.botao-tratamentos:hover {
+  transform: scale(1.2);
+  background-color: black;
+  color: #fff;
 }
 
 #cardapio {
@@ -66,6 +72,10 @@ body {
   display: inline-block;
   padding: 20px;
   text-align: start;
+  transition: all ease 0.3s;
+}
+.social-links a:hover {
+  transform: scale(1.2);
 }
 
 .logo-img {
@@ -94,8 +104,14 @@ body {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  transition: all ease 0.3s;
   background-color: #4E7385;
   color: white;
+}
+#fale-conosco button:hover {
+  transform: scale(1.2);
+  background-color: black;
+  color: #fff;
 }
 
 .nav-cardapio .nav-link.active {
